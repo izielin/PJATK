@@ -1,4 +1,4 @@
-package ScoredTask.Arrays;
+package Practice.Arrays;
 
 import java.util.Arrays;
 import java.util.Scanner;
