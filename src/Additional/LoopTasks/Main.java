@@ -38,17 +38,25 @@ public class Main {
         System.out.println("Podaj liczbę: ");
         Scanner scanner = new Scanner(System.in);
         byte input = scanner.nextByte();
-        StringBuilder builder = new StringBuilder();
         int rest = Integer.MAX_VALUE;
 
         while (rest > 4) {
             rest = (byte) (input % 4);
-            builder.append(input / 4);
+            System.out.print(input / 4);
             input = (byte) rest;
         }
-        builder.append(rest);
+        System.out.print(rest);
 
-        System.out.println(builder);
+        /*
+        int VAL = 13;
+        string s = "";
+        while (VAL>=1){
+            int rest = VAL %2;
+            s = rest+s;
+            Val/=2;
+        }
+        System.out.println(s);
+         */
 
     }
 
@@ -59,7 +67,7 @@ public class Main {
         for (int i = 1; i <= targetSize; i++) {
             for (int j = 1; j <= targetSize; j++) {
                 if (j <= size || j == targetSize || j == size + 2 || i == 1 && j != size + 1 || i == targetSize && j != size + 1)
-                    System.out.print(character);
+                    System.out.print("*");
                 else
                     System.out.print(" ");
             }
@@ -105,16 +113,16 @@ public class Main {
     }
 
     public static void task2() {
-//        System.out.println("Podaj rozmiar i znak: ");
-//        Scanner scanner = new Scanner(System.in);
-//        int size = scanner.nextInt();
+        System.out.println("Podaj rozmiar i znak: ");
+        Scanner scanner = new Scanner(System.in);
+        int size = scanner.nextInt();
 //        String character = scanner.next();
-        for (int i = 1; i <= 9; i++) {
-            System.out.println(i);
-            System.out.println((i % 2) == 0 ? "Even number" : draw3(i));
-            System.out.println();
-
-        }
+//        for (int i = 1; i <= 9; i++) {
+//            System.out.println(i);
+        System.out.println((size % 2) == 0 ? "Even number" : draw3(size));
+//            System.out.println();
+//
+//        }
     }
 
     // task 3

@@ -1,6 +1,6 @@
 package Theory;
 
-public class Lecture1 {
+public class ByteOperation {
     public static void main(String[] args) {
         System.out.println(10);
         System.out.println(012);
