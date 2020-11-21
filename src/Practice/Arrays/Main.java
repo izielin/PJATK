@@ -7,57 +7,45 @@ public class Main {
 
     //zadanie 1
     public static void task1() {
-        double[] arrayDouble = new double[10];
+        double[] doubles = new double[10];
 
-        for (int i = 0; i < arrayDouble.length; i++) {
-            arrayDouble[i] = (int) (Math.random() * 100); // wypełnianie losowymi wartościami z zakresu 0-100
+        for (int i = 0; i < doubles.length; i++) {
+            doubles[i] = (int) (Math.random() * 100); // wypełnianie losowymi wartościami z zakresu 0-100
         }
 
-        System.out.println("Whole array: ");
-        for (double v : arrayDouble) {
-            System.out.print(v + ", ");
+        System.out.println("Cała tablica: ");
+        printDoubleArray(doubles);
+        System.out.println();
+
+        System.out.println("Wartości na parzystych indeksach: ");
+        for (int i = 0; i < doubles.length; i += 2) { // można też zwiększać i o jeden za każdym przejściem pętli co da taki sam efekt: for (int i = 0; i < numbers.length; i++)
+            System.out.print(doubles[i]);  // tylko wtedy musimy zadbać o to żeby wybierać tylko parzyste i: System.out.print(i % 2 == 0 ? doubles[i] + ", " : "");
         }
         System.out.println();
 
-        System.out.println("Even index: ");
-        for (int i = 0; i < arrayDouble.length; i++) {
-            System.out.print(i % 2 == 0 ? arrayDouble[i] + ", " : ""); // wybieranie tylko parzystego i
-        }
-
-        /*
-        alternatywne rozwiązanie
-
-        for (int i = 0; i < arrayDouble.length; i+=2) {
-            System.out.print(arrayDouble[i]);
-        }
-         */
-
-        System.out.println();
-
-        System.out.println("Odd cast int value: ");
-        for (double v : arrayDouble) {
+        System.out.println("Wartości które po rzutowaniu na int są nieparzyste: ");
+        for (double v : doubles) {
             System.out.print((int) v % 2 != 0 ? v + ", " : "");
         }
-
     }
 
     //zadanie 2
     public static void task2() {
-        char[] arrayChar = {'a', '!', 'w'}; //dowolne znaki
-        int min = 128; // przypisanie największej możliwej wartości kodu ascii + 1, dla pewności, że każdy podany znak będzie mniejszy od zmiennej min
-        char resoult = '0';
+        char[] chars = {'a', '!', 'w'}; //dowolne znaki
+        int minimumAsciiCode = 128; // przypisanie największej możliwej wartości kodu ascii + 1, dla pewności, że każdy podany znak będzie mniejszy od zmiennej min
+        char result = '0';
 
-        for (char c : arrayChar) { // alternatywnie for(int i=0;i<arrayChar.length;i++)
-            if ((int) c < min) {
-                min = (int) c;
-                resoult = c;
+        for (char c : chars) { // alternatywnie for(int i=0;i<chars.length;i++)
+            if ((int) c < minimumAsciiCode) { // if ((int) char[i] < minimumAsciiCode)
+                minimumAsciiCode = c; // minimumAsciiCode = (int) char[i];
+                result = c; // result = char[i];
             }
         }
-        System.out.println(resoult);
+        System.out.println(result);
     }
 
     //zadanie 3
-    public static void readCharArray(char[] array) {
+    public static void printCharArray(char[] array) {
         // odczytywanie wszystkich wartości w tablicy
         for (char c : array) {
             System.out.print(c + ", ");
@@ -66,45 +54,49 @@ public class Main {
     }
 
     public static void task3() {
-        char[] arrayChar = new char[5];
+        char[] chars = new char[5];
         int counter = 0;
 
-        for (int i = 0; i < arrayChar.length; i++) {
+        for (int i = 0; i < chars.length; i++) {
             /*
             posługujemy się kodem ascii, dużych liter jest 26, stąd losujemy wartość między 0 i 26
             korzystamy z funkcji (Math.random() * (max - min)) + min
             gdzie max to liczba na której zakres się kończy
             a min to liczba na której zakres się zaczyna
              */
-            arrayChar[i] = (char) ('A' + (Math.random() * (26)));
+            chars[i] = (char) ('A' + (Math.random() * (26)));
         }
 
-        readCharArray(arrayChar);
+        printCharArray(chars);
 
         System.out.println("Podaj znak który chcesz znaleźć: ");
         Scanner in = new Scanner(System.in);
         char input = in.next().charAt(0);
 
-        for (int i = 0; i < arrayChar.length; i++) {
-            if (arrayChar[i] == input)
+        for (int i = 0; i < chars.length; i++) {
+            if (chars[i] == input)
                 counter += 1; // sprawdzamy czy wprowadzony znak jest taki sam jak znajdujący się w tablicy na pozycji z indeksem i
-            arrayChar[i] = '0';
+            chars[i] = '0';
         }
 
         System.out.println(counter);
-        readCharArray(arrayChar);
+        printCharArray(chars);
 
     }
 
+
     //zadanie 4
     public static void task4() {
-        int[] arrayInt = new int[(int) ((Math.random() * (15 - 10)) + 10)];
+        int[] numbers = new int[(int) ((Math.random() * (15 - 10)) + 10)];
 
-        for (int i = 0; i < arrayInt.length; i++) {
-            arrayInt[i] = (int) (Math.random() * arrayInt.length);
+        /*
+        for (int i = 0; i < numbers.length; i++) {
+            numbers[i] = (int) (Math.random() * numbers.length);
         }
+        */
+        fillIntArray(numbers, numbers.length, 0);
 
-        for (int i = arrayInt.length - 1; i >= 0; i--) {
+        for (int i = numbers.length - 1; i >= 0; i--) {
             /*
             ten if-else jest użyty tylko żeby wydruk w terminalu ładnie wyglądał
             równie dobrze wystarczy użyć System.out.print(i+" ");
@@ -117,9 +109,9 @@ public class Main {
         }
         System.out.println();
 
-        for (int k : arrayInt) {
-            for (int j = 0; j < arrayInt.length; j++) {
-                if (k == j) System.out.print(" * ");
+        for (int n : numbers) {
+            for (int i = 0; i < numbers.length; i++) {
+                if (n == i) System.out.print(" * ");
                 else System.out.print(" . ");
             }
             System.out.println();
@@ -127,12 +119,11 @@ public class Main {
     }
 
     //zadanie 5
-    public static int[] fillIntArray(int[] array) {
-        // wypełnianie tablicy losowymi wartościami 20-120
+    public static void fillIntArray(int[] array, int highRange, int lowRange) {
+        // wypełnianie tablicy losowymi wartościami z przedziału podanego przez użytkownika
         for (int i = 0; i < array.length; i++) {
-            array[i] = (int) (Math.random() * (100 - 10) + 10);
+            array[i] = (int) (Math.random() * (highRange - lowRange) + lowRange);
         }
-        return array;
     }
 
     public static int[] appendToExistingArray(int[] array, int element) {
@@ -141,7 +132,7 @@ public class Main {
         return array;
     }
 
-    public static void readIntArray(int[] array) {
+    public static void printIntArray(int[] array) {
         // odczytywanie wszystkich wartości w tablicy
         for (int v : array) {
             System.out.print(v + ", ");
@@ -149,19 +140,19 @@ public class Main {
         System.out.println();
     }
 
-    public static int searchMax(int[] arr) {
+    public static int searchMax(int[] array) {
         // wyszukiwanie największej liczby w tablicy
         int max = Integer.MIN_VALUE; // deklaracja najmniejszą wartością int żeby mieć pewność że każda liczba w tablicy będzie większa od zmiennej min
-        for (int i : arr) {
+        for (int i : array) {
             if (i > max) max = i;
         }
         return max;
     }
 
-    public static int searchMin(int[] arr) {
+    public static int searchMin(int[] array) {
         // wyszukiwanie najmniejszej liczby w tablicy
         int min = Integer.MAX_VALUE;
-        for (int i : arr) {
+        for (int i : array) {
             if (i < min) min = i;
         }
         return min;
@@ -175,8 +166,14 @@ public class Main {
         int[] array1 = new int[(int) ((Math.random() * (25 - 10)) + 10)];
         int[] array2 = new int[(int) ((Math.random() * (25 - 10)) + 10)];
 
-        fillIntArray(array1); // uzupełnianie tablicy 1
-        fillIntArray(array2); // uzupełnianie tablicy 2
+        int highRange, lowRange;
+        System.out.println("Podaj zakres w jakim mają zostać rozlosowane liczby: ");
+        Scanner scanner = new Scanner(System.in);
+        highRange = scanner.nextInt();
+        lowRange = scanner.nextInt();
+
+        fillIntArray(array1, highRange, lowRange); // uzupełnianie tablicy 1
+        fillIntArray(array2, highRange, lowRange); // uzupełnianie tablicy 2
 
         // nowa tablicę zawierająca wszystkie elementy z obu tablic
         int[] array3 = new int[array1.length + array2.length]; // inicjujemy długość jako sumę długości obu tablic wejściowych
@@ -191,8 +188,6 @@ public class Main {
             else array3[i] = array2[i - array1.length];
         }
 
-        // nowa tablica zawierająca elementy występujące w obu tablicach
-        int length = 0; // zmienna reprezentująca obecną długość 4 tablicy
         /*
         do tablicy 4 można podejść dwojako, albo zadeklarować ją jako: "int[] array4 = new int[array1.length + array2.length];"
         wtedy większość tablicy przyjmie wartości 0 a do jej uzupełniania wykorzystujemy instrukcję: "array4[length++] = array1[i];"
@@ -201,18 +196,15 @@ public class Main {
         zastosowane przez mnie rozwiązanie jest nieco bardziej zaawansowane i zakłada rozszerzanie tablicy array4 według
         ilości powtarzających się liczb
          */
+
+        // nowa tablica zawierająca elementy występujące w obu tablicach
         int[] array4 = new int[0];
 
         // szukamy wspólnych liczb w obu tablicach
-        for (int i = 0; i < Math.max(array1.length, array2.length); i++) {
-            for (int j = 0; j < Math.min(array1.length, array2.length); j++) {
-                if (array1.length > array2.length) {
-                    if (array1[i] == array2[j])
-                        array4 = appendToExistingArray(array4, array1[i]);
-                } else {
-                    if (array2[i] == array1[j])
-                        array4 = appendToExistingArray(array4, array2[i]);
-                }
+        for (int k : array1) {
+            for (int i : array2) {
+                if (k == i)
+                    array4 = appendToExistingArray(array4, k);
             }
         }
 
@@ -231,20 +223,20 @@ public class Main {
         }
 
         System.out.println("\n" + "Pierwsza tablica wejściowa: ");
-        readIntArray(array1);
+        printIntArray(array1);
         System.out.println("\n" + "Druga tablica wejściowa: ");
-        readIntArray(array2);
+        printIntArray(array2);
         System.out.println("\n" + "Tablica zawierająca elementy występujące w obu tablicach: ");
-        readIntArray(array3);
+        printIntArray(array3);
         System.out.println("\n" + "Tablica zawierająca elementy występujące w obu tablicach");
-        readIntArray(array4);
+        printIntArray(array4);
         System.out.println("\n" + "Tablica liczb całkowitych z przedziału pomiędzy elementem o najmniejszej a największej wartości z obu tablic wejściowych");
-        readIntArray(array5);
+        printIntArray(array5);
 
     }
 
     // zadanie 6
-    public static void readDoubleArray(double[] array) {
+    public static void printDoubleArray(double[] array) {
         // odczytywanie wszystkich wartości w tablicy
         for (double v : array) {
             System.out.printf("%.2f ", v);
@@ -254,52 +246,50 @@ public class Main {
 
     public static void task6() {
         int length = 13;
-        double[] arrayDouble = new double[length];
-        int[] arrayInt = new int[length];
+        double[] doubles = new double[length];
+        int[] numbers = new int[length];
         int tempInt;
         double tempDouble, temp;
 
 
         for (int i = 0; i < length; i++) {
-            arrayDouble[i] = Math.random() * 1000;
-            arrayInt[i] = (int) (Math.random() * 1000);
+            doubles[i] = Math.random() * 1000;
+            numbers[i] = (int) (Math.random() * 1000);
         }
 
-        double[] arrayResult = new double[length];
-        for (int i = 0; i < arrayResult.length; i++) {
-            arrayResult[i] = arrayDouble[i] + arrayInt[i];
+        double[] results = new double[length];
+        for (int i = 0; i < results.length; i++) {
+            results[i] = numbers[i] + numbers[i];
         }
 
-        for (int i = 0; i < arrayResult.length; i++) {
-            for (int j = i + 1; j < arrayResult.length; j++) {
-                if (arrayResult[i] > arrayResult[j]) {
-                    temp = arrayResult[i];
-                    tempInt = arrayInt[i];
-                    tempDouble = arrayDouble[i];
-                    arrayResult[i] = arrayResult[j];
-                    arrayInt[i] = arrayInt[j];
-                    arrayDouble[i] = arrayDouble[j];
-                    arrayResult[j] = temp;
-                    arrayInt[j] = tempInt;
-                    arrayDouble[j] = tempDouble;
+        for (int i = 0; i < results.length; i++) {
+            for (int j = i + 1; j < results.length; j++) {
+                if (results[i] > results[j]) {
+                    temp = results[i];
+                    tempInt = numbers[i];
+                    tempDouble = doubles[i];
+                    results[i] = results[j];
+                    numbers[i] = numbers[j];
+                    doubles[i] = doubles[j];
+                    results[j] = temp;
+                    numbers[j] = tempInt;
+                    doubles[j] = tempDouble;
                 }
             }
         }
 
         System.out.println("\n" + "Tabela liczb całkowitych:");
-        readIntArray(arrayInt);
+        printIntArray(numbers);
         System.out.println("\n" + "Tabela liczb zmiennoprzecinkowych:");
-        readDoubleArray(arrayDouble);
+        printDoubleArray(doubles);
         System.out.println("\n" + "Tabela sum:");
-        readDoubleArray(arrayResult);
+        printDoubleArray(results);
     }
 
     //zadanie 7
     public static int getSize(int[][] array, int row) {
-
         int column = 0;
         int[] elementsInRows = new int[row];
-        double total = 0;
 
         for (int i = 0; i < row; i++) {
             elementsInRows[i] = array[i].length;
@@ -316,7 +306,7 @@ public class Main {
     }
 
     public static void task7() {
-        int[][] array = {
+        int[][] array2D = {
                 {1, 2, 3, 4},
                 {5, 6, 7, 8},
                 {9, 10, 11, 12},
@@ -325,19 +315,20 @@ public class Main {
 
         /*
         na potrzeby zadania wystarczy zmiennej row i col przypisać wartość 4
-        wywołanie funkcji get size zapewnia poprawne działanie algorytmu dla tablicy zwierającej więcej tablic w sobie
+        wywołanie funkcji getSize zapewnia poprawne działanie algorytmu dla tablicy zwierającej więcej tablic w sobie
+        (co możecie sprawdzić dodając kolejne 4-elementowe tablice, do tablicy array2D)
         oraz przerywa działanie programu jeżeli któraś z wewnętrznych tablic ma inną długość
          */
 
-        int row = array.length;
-        int column = getSize(array, row);
+        int rowSize = array2D.length;
+        int columnSize = getSize(array2D, rowSize);
 
-        for (int j = 0; j < column; j++) {
-            for (int i = 0; i < row; i++) {
+        for (int j = 0; j < columnSize; j++) {
+            for (int i = 0; i < rowSize; i++) {
                 if (j % 2 == 0)
-                    System.out.print(array[i][j] + " ");
+                    System.out.print(array2D[i][j] + " ");
                 else
-                    System.out.print(array[column - 1 - i][j] + " ");
+                    System.out.print(array2D[columnSize - 1 - i][j] + " ");
             }
         }
     }
