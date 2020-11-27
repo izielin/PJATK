@@ -1,6 +1,8 @@
+package ScoredTask.Arrays;
+
 import java.util.Arrays;
 
-public class s22936_Cwiczenia03 {
+public class Main {
     //task 1
     public static byte[] appendToExistingArray(byte[] array, byte element) {
         array = Arrays.copyOf(array, array.length + 1);
@@ -35,18 +37,27 @@ public class s22936_Cwiczenia03 {
 
     public static void task1() {
         byte[] array = new byte[10];
-        byte[] primaryNumber = new byte[0];
-        byte[] rest = new byte[0];
 
+        int counter = 0;
 
         for (int i = 0; i < array.length; i++) {
             array[i] = (byte) (Math.random() * 128);
         }
 
         for (byte b : array) {
-            if (isPrimeNumber(b)) primaryNumber = appendToExistingArray(primaryNumber, b);
-            else rest = appendToExistingArray(rest, b);
+            if (isPrimeNumber(b)) counter += 1;
         }
+
+        byte[] primaryNumber = new byte[counter];
+        byte[] rest = new byte[array.length - counter];
+
+        int k = 0, m = 0;
+        for (byte b : array) {
+            if (isPrimeNumber(b))
+                primaryNumber[k++] = b;
+            else rest[m++] = b;
+        }
+
 
         printByteArray(array);
         printByteArray(primaryNumber);
@@ -96,13 +107,12 @@ public class s22936_Cwiczenia03 {
         }
     }
 
-
     public static void main(String[] args) {
         System.out.println("\n" + "Zadanie 1");
         task1();
-        System.out.println("\n" + "Zadanie 2");
-        task2();
-        System.out.println("\n" + "Zadanie 3");
-        task3();
+//        System.out.println("\n" + "Zadanie 2");
+//        task2();
+//        System.out.println("\n" + "Zadanie 3");
+//        task3();
     }
 }

@@ -1,6 +1,5 @@
 package Theory;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Arrays {
@@ -17,7 +16,7 @@ public class Arrays {
      * Z każdym elementem tablicy związany jest index. Indeks jest nieujemną liczbą, poczynając od numeru 0
      *
      */
-    public static void main(String[] args) {
+    public static void lecture1() {
         //fill
         int[] numbers = new int[10];
 //        int[] numbers = {10,20,30};
@@ -50,23 +49,68 @@ public class Arrays {
 
         System.out.println("\n" + "Wypełnij tablicę: ");
         Scanner scanner = new Scanner(System.in);
-        while(fill<arrSt.length){
+        while (fill < arrSt.length) {
             arrSt[fill++] = scanner.nextInt();
         }
 
-        int delIndex =5;
+        int delIndex = 5;
         for (int i = delIndex; i < fill; i++) {
-            arrSt[i] =arrSt[i+1];
+            arrSt[i] = arrSt[i + 1];
         }
         fill--;
-        arrSt[fill]=0;
+        arrSt[fill] = 0;
 
         //============
         int[][] arr2D = new int[2][3]; // int[][] arr2D = {{3,2,1},{8,5,7}}
         double[][] double2D = new double[2][];
         double2D[0] = new double[100];
         double2D[1] = new double[1000];
+    }
 
+    public static void printIntArray(int[] array, int fill) {
+        for (int i = 0; i < fill; i++) {
+            System.out.print(array[i] + ((i < fill - 1) ? ", " : "\n"));
+        }
+    }
 
+    public static void fillArray() {
+        Scanner scanner = new Scanner(System.in);
+        int[] array = new int[5];
+
+        int fill = 0;
+        int data;
+        //insert base data
+        while ((data = scanner.nextInt()) != 0) {
+            array[fill++] = data;
+            printIntArray(array, fill);
+        }
+
+        //insert additional data
+        System.out.println("Insert element: ");
+        data = scanner.nextInt();
+        int pos = 1;
+
+        for (int i = fill - 1; i >= pos; i--) {
+            array[i + 1] = array[i];
+        }
+
+        array[pos] = data;
+        fill++;
+
+        printIntArray(array, fill);
+
+        //delete element
+        System.out.println("Delete element: ");
+        pos = scanner.nextInt();
+        for (int i = pos; i < fill; i++) {
+            array[i] = array[i + 1];
+        }
+        fill--;
+
+        printIntArray(array, fill);
+    }
+
+    public static void main(String[] args) {
+        fillArray();
     }
 }
