@@ -3,6 +3,8 @@ package Practice.Arrays;
 import java.util.Arrays;
 import java.util.Scanner;
 
+import static AuxiliaryFunctions.Arrays.*;
+
 public class Main {
 
     //zadanie 1
@@ -45,14 +47,6 @@ public class Main {
     }
 
     //zadanie 3
-    public static void printCharArray(char[] array) {
-        // odczytywanie wszystkich wartości w tablicy
-        for (char c : array) {
-            System.out.print(c + ", ");
-        }
-        System.out.println();
-    }
-
     public static void task3() {
         char[] chars = new char[5];
         int counter = 0;
@@ -83,7 +77,6 @@ public class Main {
         printCharArray(chars);
 
     }
-
 
     //zadanie 4
     public static void task4() {
@@ -119,27 +112,6 @@ public class Main {
     }
 
     //zadanie 5
-    public static void fillIntArray(int[] array, int highRange, int lowRange) {
-        // wypełnianie tablicy losowymi wartościami z przedziału podanego przez użytkownika
-        for (int i = 0; i < array.length; i++) {
-            array[i] = (int) (Math.random() * (highRange - lowRange) + lowRange);
-        }
-    }
-
-    public static int[] appendToExistingArray(int[] array, int element) {
-        array = Arrays.copyOf(array, array.length + 1);
-        array[array.length - 1] = element;
-        return array;
-    }
-
-    public static void printIntArray(int[] array) {
-        // odczytywanie wszystkich wartości w tablicy
-        for (int v : array) {
-            System.out.print(v + ", ");
-        }
-        System.out.println();
-    }
-
     public static int searchMax(int[] array) {
         // wyszukiwanie największej liczby w tablicy
         int max = Integer.MIN_VALUE; // deklaracja najmniejszą wartością int żeby mieć pewność że każda liczba w tablicy będzie większa od zmiennej min
@@ -204,7 +176,7 @@ public class Main {
         for (int k : array1) {
             for (int i : array2) {
                 if (k == i)
-                    array4 = appendToExistingArray(array4, k);
+                    array4 = appendIntToExistingArray(array4, k);
             }
         }
 
@@ -236,14 +208,6 @@ public class Main {
     }
 
     // zadanie 6
-    public static void printDoubleArray(double[] array) {
-        // odczytywanie wszystkich wartości w tablicy
-        for (double v : array) {
-            System.out.printf("%.2f ", v);
-        }
-        System.out.println();
-    }
-
     public static void task6() {
         int length = 13;
         double[] doubles = new double[length];

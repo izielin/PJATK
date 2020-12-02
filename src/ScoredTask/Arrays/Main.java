@@ -1,21 +1,9 @@
 package ScoredTask.Arrays;
 
-import java.util.Arrays;
+import static AuxiliaryFunctions.Arrays.printByteArray;
 
 public class Main {
     //task 1
-    public static byte[] appendToExistingArray(byte[] array, byte element) {
-        array = Arrays.copyOf(array, array.length + 1);
-        array[array.length - 1] = element;
-        return array;
-    }
-
-    public static void printByteArray(byte[] array) {
-        for (byte b : array) {
-            System.out.print(b + ", ");
-        }
-        System.out.println();
-    }
 
     public static boolean isPrimeNumber(byte number) {
         int m, flag = 0;

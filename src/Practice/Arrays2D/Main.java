@@ -1,32 +1,12 @@
 package Practice.Arrays2D;
 
-
-import java.util.Arrays;
 import java.util.Scanner;
 
+import static AuxiliaryFunctions.Arrays.*;
+
 public class Main {
-    //Auxiliary Functions
-    public static void fillIntArray(int[] array, int highRange, int lowRange) {
-        for (int i = 0; i < array.length; i++) {
-            array[i] = (int) (Math.random() * (highRange - lowRange) + lowRange);
-        }
-    }
 
-    public static void fillFloatArray(float[] array, double highRange, double lowRange) {
-        for (int i = 0; i < array.length; i++) {
-            array[i] = (float) (Math.random() * (highRange - lowRange) + lowRange);
-        }
-    }
-
-    public static void printIntArray(int[] array) {
-        // odczytywanie wszystkich wartości w tablicy
-        int fill = array.length;
-        for (int i = 0; i < fill; i++) {
-            System.out.print(array[i] + ((i < fill - 1) ? ", " : ""));
-        }
-    }
-
-    public static void printFloatArray(float[] array) {
+    public static void uniquePrint(float[] array) {
         // odczytywanie wszystkich wartości w tablicy
         int fill = array.length;
         for (float v : array) {
@@ -38,13 +18,6 @@ public class Main {
                 System.out.printf("   %.2f ", v);
         }
         System.out.println();
-    }
-
-    public static void printLongArray(long[] array) {
-        int fill = array.length;
-        for (int i = 0; i < fill; i++) {
-            System.out.print(array[i] + ((i < fill - 1) ? ", " : "\n"));
-        }
     }
 
     public static void spiralPrint(int endingRowIndex, int endingColumnIndex, int[][] array) {
@@ -81,33 +54,11 @@ public class Main {
         }
     }
 
-    public static int[] appendToExistingArray(int[] array, int element) {
-        array = Arrays.copyOf(array, array.length + 1);
-        array[array.length - 1] = element;
-        return array;
-    }
-
-    private static int[] removeDuplicates(int[] originArray, int n) {
-        int length = originArray.length;
-        for (int i = 0; i < length; i++) {
-            for (int j = i + 1; j < length; j++) {
-                if (originArray[i] == originArray[j]) {
-                    originArray[j] = originArray[length - 1];
-                    length--;
-                    j--;
-                }
-            }
-        }
-
-        return Arrays.copyOf(originArray, length);
-
-    }
-
     public static int[][] fill2DArray(int[][] source, int firstVal, int secondVal, int distance) {
         int[][] result = new int[source.length + 1][3];
 
-        for (int i = 0; i < result.length-1; i++) {
-                System.arraycopy(source[i], 0, result[i], 0, result[i].length);
+        for (int i = 0; i < result.length - 1; i++) {
+            System.arraycopy(source[i], 0, result[i], 0, result[i].length);
         }
 
         result[result.length - 1][0] = firstVal;
@@ -115,7 +66,6 @@ public class Main {
         result[result.length - 1][2] = distance;
         return result;
     }
-
 
     // task 1
     public static void task1() {
@@ -249,7 +199,7 @@ public class Main {
         }
 
         for (float[] aFloat : floats) {
-            printFloatArray(aFloat);
+            uniquePrint(aFloat);
         }
 
         System.out.println("Right diagonal: " + rightDiagonal);

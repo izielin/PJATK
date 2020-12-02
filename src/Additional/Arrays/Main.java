@@ -1,32 +1,9 @@
 package Additional.Arrays;
 
-import java.util.Arrays;
-import java.util.Random;
+import static AuxiliaryFunctions.Arrays.*;
 
 public class Main {
     // task 1
-    public static byte[] appendToExistingArray(byte[] array, byte element) {
-        array = Arrays.copyOf(array, array.length + 1);
-        array[array.length - 1] = element;
-        return array;
-    }
-
-    public static void printByteArray(byte[] array) {
-        // odczytywanie wszystkich wartości w tablicy
-        for (byte b : array) {
-            System.out.print(b + ", ");
-        }
-        System.out.println();
-    }
-
-//    public static void printByteArray(byte[] array) {
-//        // odczytywanie wszystkich wartości w tablicy
-//        for (byte b : array) {
-//            System.out.print(b + ", ");
-//        }
-//        System.out.println();
-//    }
-
     public static void task1() {
         // rozdzielenie wartości z tablicy na cyfry parzyste i nieparzyste
         byte[] array = new byte[10];
@@ -39,8 +16,8 @@ public class Main {
 
         for (byte b : array) {
             System.out.println(b % 2 == 0);
-            if (b % 2 != 0) odd = appendToExistingArray(odd, b);
-            else even = appendToExistingArray(even, b);
+            if (b % 2 != 0) odd = appendByteToExistingArray(odd, b);
+            else even = appendByteToExistingArray(even, b);
         }
 
         printByteArray(array);
@@ -106,22 +83,9 @@ public class Main {
 
     }
 
-    public static boolean[] appendBooleanValueToExistingArray(boolean[] array, boolean element) {
-        array = Arrays.copyOf(array, array.length + 1);
-        array[array.length - 1] = element;
-        return array;
-    }
-
-    public static void printBooleanArray(boolean[] array) {
-        for (boolean b : array) {
-            System.out.print(b + ", ");
-        }
-        System.out.println();
-    }
-
+    // task 4
     public static void task4() {
         // dzielenie wartości z tablicy na dwie oddzielne - true i false
-        Random random = new Random();
 
         boolean[] array = new boolean[10];
         boolean[] trueArray = new boolean[0];
@@ -129,13 +93,13 @@ public class Main {
 
         for (int i = 0; i < array.length; i++) {
 //            array[i] = random.nextBoolean();
-            array[i] = (boolean) (Math.random() < 0.5);
+            array[i] = Math.random() < 0.5;
         }
 
 
         for (boolean b : array) {
-            if (b) trueArray = appendBooleanValueToExistingArray(trueArray, b);
-            else falseArray = appendBooleanValueToExistingArray(falseArray, b);
+            if (b) trueArray = appendBooleanValueToExistingArray(trueArray, true);
+            else falseArray = appendBooleanValueToExistingArray(falseArray, false);
         }
 
         printBooleanArray(array);
@@ -143,7 +107,7 @@ public class Main {
         printBooleanArray(falseArray);
     }
 
-
+    // task 5
     public static int getSizeof(int n) {
         int length = 0;
         long temp = 1;
@@ -178,28 +142,7 @@ public class Main {
         }
     }
 
-    public static void bubbleSortAscending(int[] arr) {
-        int n = arr.length;
-        for (int i = 0; i < n - 1; i++)
-            for (int j = 0; j < n - i - 1; j++)
-                if (arr[j] > arr[j + 1]) {
-                    int temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
-                }
-    }
-
-    public static void bubbleSortDescending(int[] arr) {
-        int n = arr.length;
-        for (int i = 0; i < n - 1; i++)
-            for (int j = 0; j < n - i - 1; j++)
-                if (arr[j] < arr[j + 1]) {
-                    int temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
-                }
-    }
-
+    // task 6
     public static void task6() {
         // szukanie czy istnieje suma dwóch elementów z tablicy która jest większa niż suma pozostałych
         int[] tab = {2, 1, 3, 9, 4, 3, 2, 1};
@@ -220,36 +163,9 @@ public class Main {
 
     }
 
-    public static void fillIntArray(int[] array, int highRange, int lowRange) {
-        for (int i = 0; i < array.length; i++) {
-            array[i] = (int) (Math.random() * (highRange - lowRange) + lowRange);
-        }
-    }
-
-    public static int[] appendIntValueToExistingArray(int[] array, int element) {
-        array = Arrays.copyOf(array, array.length + 1);
-        array[array.length - 1] = element;
-        return array;
-    }
-
-    private static int[] removeDuplicates(int[] originArray, int n) {
-        int length = originArray.length;
-        for (int i = 0; i < length; i++) {
-            for (int j = i + 1; j < length; j++) {
-                if (originArray[i] == originArray[j]) {
-                    originArray[j] = originArray[length - 1];
-                    length--;
-                    j--;
-                }
-            }
-        }
-
-        return Arrays.copyOf(originArray, length);
-
-    }
-
+    //task 7
     public static void task7() {
-        // utwórz dwie tablice zmiennych , wypełnij je cciągiem rosnącym i malejącym, utwórz 3 tablice
+        // utwórz dwie tablice zmiennych , wypełnij je ciągiem rosnącym i malejącym, utwórz 3 tablice
         // w której znajdą się unikalne sumy kolejnych indeksów z poprzednich tablic
         int size = 30;
         int[] asc = new int[size];
@@ -268,12 +184,12 @@ public class Main {
 
         sum = removeDuplicates(sum, sum.length);
 
-        Practice.Arrays.Main.printIntArray(asc);
-        Practice.Arrays.Main.printIntArray(desc);
-        Practice.Arrays.Main.printIntArray(sum);
+        printIntArray(asc);
+        printIntArray(desc);
+        printIntArray(sum);
     }
 
     public static void main(String[] args) {
-        task7();
+        task4();
     }
 }
