@@ -43,6 +43,14 @@ public class Array {
         System.out.println();
     }
 
+    public static void printStringArray(String[] array) {
+        int fill = array.length;
+        for (int i = 0; i < fill; i++) {
+            System.out.print(array[i] + ((i < fill - 1) ? ", " : ""));
+        }
+        System.out.println();
+    }
+
     public static void printDoubleArray(double[] array) {
         int fill = array.length;
         for (int i = 0; i < fill; i++) {
@@ -62,6 +70,17 @@ public class Array {
 
     }
 
+    public static void print2DArray(char[][] array) {
+        for (char[] ints : array) {
+            for (int n = 0; n < ints.length; n++) {
+                System.out.print(ints[n] + ((n < ints.length - 1) ? " " : ""));
+            }
+            System.out.println();
+        }
+        System.out.println();
+
+    }
+
     // fill array
 
     public static void fillIntArray(int[] array, int highRange, int lowRange) {
@@ -71,6 +90,12 @@ public class Array {
     }
 
     public static void fillFloatArray(float[] array, double highRange, double lowRange) {
+        for (int i = 0; i < array.length; i++) {
+            array[i] = (float) (Math.random() * (highRange - lowRange) + lowRange);
+        }
+    }
+
+    public static void fillDoubleArray(double[] array, double highRange, double lowRange) {
         for (int i = 0; i < array.length; i++) {
             array[i] = (float) (Math.random() * (highRange - lowRange) + lowRange);
         }
