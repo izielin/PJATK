@@ -1,0 +1,258 @@
+Dąb nie jest wiecznie zielone 
+Przekrój drzewa: okrąg
+Wysokość drzewa: 8 m
+Kształt liścia: owal
+
+Morelowiec nie jest wiecznie zielone 
+Przekrój drzewa: koło
+Wysokość drzewa: 3 m
+Kształt liścia: owal
+Wydawany owoc: morela
+Osika nie jest wiecznie zielone 
+Przekrój drzewa: okrąg
+Wysokość drzewa: 8 m
+Kształt liścia: owal
+
+Dąb nie jest wiecznie zielone 
+Przekrój drzewa: okrąg
+Wysokość drzewa: 8 m
+Kształt liścia: owal
+
+Dąb nie jest wiecznie zielone 
+Przekrój drzewa: okrąg
+Wysokość drzewa: 8 m
+Kształt liścia: owal
+
+Modrzew jest wiecznie zielone 
+Przekrój drzewa: owal
+Wysokość drzewa: 15 m
+Ilość igieł: 10000 
+Długość szyszki: 5.0cm 
+
+Modrzew jest wiecznie zielone 
+Przekrój drzewa: owal
+Wysokość drzewa: 15 m
+Ilość igieł: 10000 
+Długość szyszki: 5.0cm 
+
+Sosna pospolita jest wiecznie zielone 
+Przekrój drzewa: okrąg
+Wysokość drzewa: 10 m
+Ilość igieł: 50000 
+Długość szyszki: 12.0cm 
+
+Modrzew jest wiecznie zielone 
+Przekrój drzewa: owal
+Wysokość drzewa: 15 m
+Ilość igieł: 10000 
+Długość szyszki: 5.0cm 
+
+Osika nie jest wiecznie zielone 
+Przekrój drzewa: okrąg
+Wysokość drzewa: 8 m
+Kształt liścia: owal
+
+Dąb nie jest wiecznie zielone 
+Przekrój drzewa: okrąg
+Wysokość drzewa: 8 m
+Kształt liścia: owal
+
+Modrzew jest wiecznie zielone 
+Przekrój drzewa: owal
+Wysokość drzewa: 15 m
+Ilość igieł: 10000 
+Długość szyszki: 5.0cm 
+
+Modrzew jest wiecznie zielone 
+Przekrój drzewa: owal
+Wysokość drzewa: 15 m
+Ilość igieł: 10000 
+Długość szyszki: 5.0cm 
+
+Modrzew jest wiecznie zielone 
+Przekrój drzewa: owal
+Wysokość drzewa: 15 m
+Ilość igieł: 10000 
+Długość szyszki: 5.0cm 
+
+Modrzew jest wiecznie zielone 
+Przekrój drzewa: owal
+Wysokość drzewa: 15 m
+Ilość igieł: 10000 
+Długość szyszki: 5.0cm 
+
+Sosna pospolita jest wiecznie zielone 
+Przekrój drzewa: okrąg
+Wysokość drzewa: 10 m
+Ilość igieł: 50000 
+Długość szyszki: 12.0cm 
+
+Osika nie jest wiecznie zielone 
+Przekrój drzewa: okrąg
+Wysokość drzewa: 8 m
+Kształt liścia: owal
+
+Dąb nie jest wiecznie zielone 
+Przekrój drzewa: okrąg
+Wysokość drzewa: 8 m
+Kształt liścia: owal
+
+Sosna pospolita jest wiecznie zielone 
+Przekrój drzewa: okrąg
+Wysokość drzewa: 10 m
+Ilość igieł: 50000 
+Długość szyszki: 12.0cm 
+
+Modrzew jest wiecznie zielone 
+Przekrój drzewa: owal
+Wysokość drzewa: 15 m
+Ilość igieł: 10000 
+Długość szyszki: 5.0cm 
+
+Modrzew jest wiecznie zielone 
+Przekrój drzewa: owal
+Wysokość drzewa: 15 m
+Ilość igieł: 10000 
+Długość szyszki: 5.0cm 
+
+Modrzew jest wiecznie zielone 
+Przekrój drzewa: owal
+Wysokość drzewa: 15 m
+Ilość igieł: 10000 
+Długość szyszki: 5.0cm 
+
+Modrzew jest wiecznie zielone 
+Przekrój drzewa: owal
+Wysokość drzewa: 15 m
+Ilość igieł: 10000 
+Długość szyszki: 5.0cm 
+
+Modrzew jest wiecznie zielone 
+Przekrój drzewa: owal
+Wysokość drzewa: 15 m
+Ilość igieł: 10000 
+Długość szyszki: 5.0cm 
+
+Osika nie jest wiecznie zielone 
+Przekrój drzewa: okrąg
+Wysokość drzewa: 8 m
+Kształt liścia: owal
+
+Sosna pospolita jest wiecznie zielone 
+Przekrój drzewa: okrąg
+Wysokość drzewa: 10 m
+Ilość igieł: 50000 
+Długość szyszki: 12.0cm 
+
+Sosna pospolita jest wiecznie zielone 
+Przekrój drzewa: okrąg
+Wysokość drzewa: 10 m
+Ilość igieł: 50000 
+Długość szyszki: 12.0cm 
+
+Modrzew jest wiecznie zielone 
+Przekrój drzewa: owal
+Wysokość drzewa: 15 m
+Ilość igieł: 10000 
+Długość szyszki: 5.0cm 
+
+Modrzew jest wiecznie zielone 
+Przekrój drzewa: owal
+Wysokość drzewa: 15 m
+Ilość igieł: 10000 
+Długość szyszki: 5.0cm 
+
+Sosna pospolita jest wiecznie zielone 
+Przekrój drzewa: okrąg
+Wysokość drzewa: 10 m
+Ilość igieł: 50000 
+Długość szyszki: 12.0cm 
+
+Modrzew jest wiecznie zielone 
+Przekrój drzewa: owal
+Wysokość drzewa: 15 m
+Ilość igieł: 10000 
+Długość szyszki: 5.0cm 
+
+Modrzew jest wiecznie zielone 
+Przekrój drzewa: owal
+Wysokość drzewa: 15 m
+Ilość igieł: 10000 
+Długość szyszki: 5.0cm 
+
+Modrzew jest wiecznie zielone 
+Przekrój drzewa: owal
+Wysokość drzewa: 15 m
+Ilość igieł: 10000 
+Długość szyszki: 5.0cm 
+
+Modrzew jest wiecznie zielone 
+Przekrój drzewa: owal
+Wysokość drzewa: 15 m
+Ilość igieł: 10000 
+Długość szyszki: 5.0cm 
+
+Sosna pospolita jest wiecznie zielone 
+Przekrój drzewa: okrąg
+Wysokość drzewa: 10 m
+Ilość igieł: 50000 
+Długość szyszki: 12.0cm 
+
+Dąb nie jest wiecznie zielone 
+Przekrój drzewa: okrąg
+Wysokość drzewa: 8 m
+Kształt liścia: owal
+
+Modrzew jest wiecznie zielone 
+Przekrój drzewa: owal
+Wysokość drzewa: 15 m
+Ilość igieł: 10000 
+Długość szyszki: 5.0cm 
+
+Dąb nie jest wiecznie zielone 
+Przekrój drzewa: okrąg
+Wysokość drzewa: 8 m
+Kształt liścia: owal
+
+Modrzew jest wiecznie zielone 
+Przekrój drzewa: owal
+Wysokość drzewa: 15 m
+Ilość igieł: 10000 
+Długość szyszki: 5.0cm 
+
+Sosna pospolita jest wiecznie zielone 
+Przekrój drzewa: okrąg
+Wysokość drzewa: 10 m
+Ilość igieł: 50000 
+Długość szyszki: 12.0cm 
+
+Modrzew jest wiecznie zielone 
+Przekrój drzewa: owal
+Wysokość drzewa: 15 m
+Ilość igieł: 10000 
+Długość szyszki: 5.0cm 
+
+Modrzew jest wiecznie zielone 
+Przekrój drzewa: owal
+Wysokość drzewa: 15 m
+Ilość igieł: 10000 
+Długość szyszki: 5.0cm 
+
+Modrzew jest wiecznie zielone 
+Przekrój drzewa: owal
+Wysokość drzewa: 15 m
+Ilość igieł: 10000 
+Długość szyszki: 5.0cm 
+
+Modrzew jest wiecznie zielone 
+Przekrój drzewa: owal
+Wysokość drzewa: 15 m
+Ilość igieł: 10000 
+Długość szyszki: 5.0cm 
+
+Sosna pospolita jest wiecznie zielone 
+Przekrój drzewa: okrąg
+Wysokość drzewa: 10 m
+Ilość igieł: 50000 
+Długość szyszki: 12.0cm 
+

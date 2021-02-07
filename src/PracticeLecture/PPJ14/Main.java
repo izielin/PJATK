@@ -132,7 +132,7 @@ public class Main {
 
     }
 
-    // task3 is the same as task6 in file Practice.Arrays.Main
+    // task3 is the same as task6 in file Practice.Arrays.PracticeLecture.PPJ24.Trees.PracticeLecture.PPJ25.Main
 
     //task 4
     public static void task4() {

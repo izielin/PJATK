@@ -1,0 +1,418 @@
+10	 6/23/2006 8:49:09 AM - (not logged in) (10.0.2.143)> Connected, sending welcome message...
+11	 6/23/2006 8:49:09 AM - (not logged in) (10.0.2.143)> 220-FileZilla Server version 0.9.18 beta
+12	 6/23/2006 8:49:09 AM - (not logged in) (10.0.2.143)> 220-written by Tim Kosse (Tim.Kosse@gmx.de)
+13	 6/23/2006 8:49:09 AM - (not logged in) (10.0.2.143)> 220 Please visit http://sourceforge.net/projects/filezilla/
+14	 6/23/2006 8:49:11 AM - (not logged in) (10.0.2.143)> USER kyle
+15	 6/23/2006 8:49:11 AM - (not logged in) (10.0.2.143)> 331 Password required for kyle
+16	 6/23/2006 8:49:12 AM - (not logged in) (10.0.2.143)> PASS *******
+17	 6/23/2006 8:49:12 AM - kyle (10.0.2.143)> 230 Logged on
+18	 6/23/2006 8:49:13 AM - kyle (10.0.2.143)> SYST
+19	 6/23/2006 8:49:13 AM - kyle (10.0.2.143)> 215 UNIX emulated by FileZilla
+20	 6/23/2006 8:49:14 AM - kyle (10.0.2.143)> FEAT
+21	 6/23/2006 8:49:14 AM - kyle (10.0.2.143)> 211-Features:
+22	 6/23/2006 8:49:14 AM - kyle (10.0.2.143)>  MDTM
+23	 6/23/2006 8:49:14 AM - kyle (10.0.2.143)>  REST STREAM
+24	 6/23/2006 8:49:14 AM - kyle (10.0.2.143)>  SIZE
+25	 6/23/2006 8:49:14 AM - kyle (10.0.2.143)>  MLST type*;size*;modify*;
+26	 6/23/2006 8:49:14 AM - kyle (10.0.2.143)>  UTF8
+27	 6/23/2006 8:49:14 AM - kyle (10.0.2.143)>  CLNT
+28	 6/23/2006 8:49:14 AM - kyle (10.0.2.143)> 211 End
+29	 6/23/2006 8:49:16 AM - kyle (10.0.2.143)> PWD
+30	 6/23/2006 8:49:16 AM - kyle (10.0.2.143)> 257 "/" is current directory.
+31	 6/23/2006 8:49:17 AM - kyle (10.0.2.143)> TYPE A
+32	 6/23/2006 8:49:17 AM - kyle (10.0.2.143)> 200 Type set to A
+33	 6/23/2006 8:49:18 AM - kyle (10.0.2.143)> PASV
+34	 6/23/2006 8:49:18 AM - kyle (10.0.2.143)> 227 Entering Passive Mode (10,0,81,10,5,209)
+35	 6/23/2006 8:49:19 AM - kyle (10.0.2.143)> LIST
+36	 6/23/2006 8:49:19 AM - kyle (10.0.2.143)> 150 Connection accepted
+37	 6/23/2006 8:49:19 AM - kyle (10.0.2.143)> 226 Transfer OK
+38	 6/23/2006 8:49:34 AM - kyle (10.0.2.143)> CWD autocad
+39	 6/23/2006 8:49:34 AM - kyle (10.0.2.143)> 250 CWD successful. "/autocad" is current directory.
+40	 6/23/2006 8:49:35 AM - kyle (10.0.2.143)> PWD
+41	 6/23/2006 8:49:35 AM - kyle (10.0.2.143)> 257 "/autocad" is current directory.
+42	 6/23/2006 8:49:36 AM - kyle (10.0.2.143)> TYPE A
+43	 6/23/2006 8:49:36 AM - kyle (10.0.2.143)> 200 Type set to A
+44	 6/23/2006 8:49:37 AM - kyle (10.0.2.143)> PASV
+45	 6/23/2006 8:49:37 AM - kyle (10.0.2.143)> 227 Entering Passive Mode (10,0,81,10,5,210)
+46	 6/23/2006 8:49:39 AM - kyle (10.0.2.143)> LIST
+47	 6/23/2006 8:49:39 AM - kyle (10.0.2.143)> 150 Connection accepted
+48	 6/23/2006 8:49:39 AM - kyle (10.0.2.143)> 226 Transfer OK
+49	 6/23/2006 8:49:40 AM - kyle (10.0.2.143)> CWD can't read
+50	 6/23/2006 8:49:40 AM - kyle (10.0.2.143)> 250 CWD successful. "/autocad/can't read" is current directory.
+51	 6/23/2006 8:49:41 AM - kyle (10.0.2.143)> PWD
+52	 6/23/2006 8:49:41 AM - kyle (10.0.2.143)> 257 "/autocad/can't read" is current directory.
+53	 6/23/2006 8:49:42 AM - kyle (10.0.2.143)> TYPE A
+54	 6/23/2006 8:49:42 AM - kyle (10.0.2.143)> 200 Type set to A
+55	 6/23/2006 8:49:43 AM - kyle (10.0.2.143)> PASV
+56	 6/23/2006 8:49:43 AM - kyle (10.0.2.143)> 227 Entering Passive Mode (10,0,81,10,5,211)
+57	 6/23/2006 8:49:44 AM - kyle (10.0.2.143)> LIST
+58	 6/23/2006 8:49:44 AM - kyle (10.0.2.143)> 150 Connection accepted
+59	 6/23/2006 8:49:44 AM - kyle (10.0.2.143)> 226 Transfer OK
+60	 6/23/2006 8:49:44 AM - kyle (10.0.2.143)> CWD /autocad/
+61	 6/23/2006 8:49:44 AM - kyle (10.0.2.143)> 250 CWD successful. "/autocad" is current directory.
+62	 6/23/2006 8:49:44 AM - kyle (10.0.2.143)> PWD
+63	 6/23/2006 8:49:44 AM - kyle (10.0.2.143)> 257 "/autocad" is current directory.
+64	 6/23/2006 8:49:44 AM - kyle (10.0.2.143)> CWD 7115m
+65	 6/23/2006 8:49:44 AM - kyle (10.0.2.143)> 250 CWD successful. "/autocad/7115m" is current directory.
+66	 6/23/2006 8:49:44 AM - kyle (10.0.2.143)> PWD
+67	 6/23/2006 8:49:44 AM - kyle (10.0.2.143)> 257 "/autocad/7115m" is current directory.
+68	 6/23/2006 8:49:45 AM - kyle (10.0.2.143)> TYPE A
+69	 6/23/2006 8:49:45 AM - kyle (10.0.2.143)> 200 Type set to A
+70	 6/23/2006 8:49:46 AM - kyle (10.0.2.143)> PASV
+71	 6/23/2006 8:49:46 AM - kyle (10.0.2.143)> 227 Entering Passive Mode (10,0,81,10,5,212)
+72	 6/23/2006 8:49:47 AM - kyle (10.0.2.143)> LIST
+73	 6/23/2006 8:49:47 AM - kyle (10.0.2.143)> 150 Connection accepted
+74	 6/23/2006 8:49:47 AM - kyle (10.0.2.143)> 226 Transfer OK
+75	 6/23/2006 8:49:49 AM - kyle (10.0.2.143)> CWD VENDOR
+76	 6/23/2006 8:49:49 AM - kyle (10.0.2.143)> 250 CWD successful. "/autocad/7115m/VENDOR" is current directory.
+77	 6/23/2006 8:49:51 AM - kyle (10.0.2.143)> PWD
+78	 6/23/2006 8:49:51 AM - kyle (10.0.2.143)> 257 "/autocad/7115m/VENDOR" is current directory.
+79	 6/23/2006 8:49:52 AM - kyle (10.0.2.143)> TYPE A
+80	 6/23/2006 8:49:52 AM - kyle (10.0.2.143)> 200 Type set to A
+81	 6/23/2006 8:49:53 AM - kyle (10.0.2.143)> PASV
+82	 6/23/2006 8:49:53 AM - kyle (10.0.2.143)> 227 Entering Passive Mode (10,0,81,10,5,213)
+83	 6/23/2006 8:49:54 AM - kyle (10.0.2.143)> LIST
+84	 6/23/2006 8:49:54 AM - kyle (10.0.2.143)> 150 Connection accepted
+85	 6/23/2006 8:49:54 AM - kyle (10.0.2.143)> 226 Transfer OK
+86	 6/23/2006 8:49:54 AM - kyle (10.0.2.143)> CWD /autocad/7115m/
+87	 6/23/2006 8:49:54 AM - kyle (10.0.2.143)> 250 CWD successful. "/autocad/7115m" is current directory.
+88	 6/23/2006 8:49:55 AM - kyle (10.0.2.143)> PWD
+89	 6/23/2006 8:49:55 AM - kyle (10.0.2.143)> 257 "/autocad/7115m" is current directory.
+90	 6/23/2006 8:49:56 AM - kyle (10.0.2.143)> CWD pro
+91	 6/23/2006 8:49:56 AM - kyle (10.0.2.143)> 250 CWD successful. "/autocad/7115m/pro" is current directory.
+92	 6/23/2006 8:49:57 AM - kyle (10.0.2.143)> PWD
+93	 6/23/2006 8:49:57 AM - kyle (10.0.2.143)> 257 "/autocad/7115m/pro" is current directory.
+94	 6/23/2006 8:49:58 AM - kyle (10.0.2.143)> TYPE A
+95	 6/23/2006 8:49:58 AM - kyle (10.0.2.143)> 200 Type set to A
+96	 6/23/2006 8:49:59 AM - kyle (10.0.2.143)> PASV
+97	 6/23/2006 8:49:59 AM - kyle (10.0.2.143)> 227 Entering Passive Mode (10,0,81,10,5,214)
+98	 6/23/2006 8:50:00 AM - kyle (10.0.2.143)> LIST
+99	 6/23/2006 8:50:00 AM - kyle (10.0.2.143)> 150 Connection accepted
+100	 6/23/2006 8:50:00 AM - kyle (10.0.2.143)> 226 Transfer OK
+101	 6/23/2006 8:50:02 AM - kyle (10.0.2.143)> CWD WORKING
+102	 6/23/2006 8:50:02 AM - kyle (10.0.2.143)> 250 CWD successful. "/autocad/7115m/pro/WORKING" is current directory.
+103	 6/23/2006 8:50:03 AM - kyle (10.0.2.143)> PWD
+104	 6/23/2006 8:50:03 AM - kyle (10.0.2.143)> 257 "/autocad/7115m/pro/WORKING" is current directory.
+105	 6/23/2006 8:50:04 AM - kyle (10.0.2.143)> TYPE A
+106	 6/23/2006 8:50:04 AM - kyle (10.0.2.143)> 200 Type set to A
+107	 6/23/2006 8:50:04 AM - kyle (10.0.2.143)> PASV
+108	 6/23/2006 8:50:04 AM - kyle (10.0.2.143)> 227 Entering Passive Mode (10,0,81,10,5,215)
+109	 6/23/2006 8:50:04 AM - kyle (10.0.2.143)> LIST
+110	 6/23/2006 8:50:04 AM - kyle (10.0.2.143)> 150 Connection accepted
+111	 6/23/2006 8:50:04 AM - kyle (10.0.2.143)> 226 Transfer OK
+112	 6/23/2006 8:50:04 AM - kyle (10.0.2.143)> CWD dwg
+113	 6/23/2006 8:50:04 AM - kyle (10.0.2.143)> 250 CWD successful. "/autocad/7115m/pro/WORKING/dwg" is current directory.
+114	 6/23/2006 8:50:05 AM - kyle (10.0.2.143)> PWD
+115	 6/23/2006 8:50:05 AM - kyle (10.0.2.143)> 257 "/autocad/7115m/pro/WORKING/dwg" is current directory.
+116	 6/23/2006 8:50:07 AM - kyle (10.0.2.143)> TYPE A
+117	 6/23/2006 8:50:07 AM - kyle (10.0.2.143)> 200 Type set to A
+118	 6/23/2006 8:50:08 AM - kyle (10.0.2.143)> PASV
+119	 6/23/2006 8:50:08 AM - kyle (10.0.2.143)> 227 Entering Passive Mode (10,0,81,10,5,216)
+120	 6/23/2006 8:50:09 AM - kyle (10.0.2.143)> LIST
+121	 6/23/2006 8:50:09 AM - kyle (10.0.2.143)> 150 Connection accepted
+122	 6/23/2006 8:50:09 AM - kyle (10.0.2.143)> 226 Transfer OK
+123	 6/23/2006 8:50:11 AM - kyle (10.0.2.143)> CWD /autocad/7115m/
+124	 6/23/2006 8:50:11 AM - kyle (10.0.2.143)> 250 CWD successful. "/autocad/7115m" is current directory.
+125	 6/23/2006 8:50:12 AM - kyle (10.0.2.143)> PWD
+126	 6/23/2006 8:50:12 AM - kyle (10.0.2.143)> 257 "/autocad/7115m" is current directory.
+127	 6/23/2006 8:50:12 AM - kyle (10.0.2.143)> CWD mec
+128	 6/23/2006 8:50:12 AM - kyle (10.0.2.143)> 250 CWD successful. "/autocad/7115m/mec" is current directory.
+129	 6/23/2006 8:50:12 AM - kyle (10.0.2.143)> PWD
+130	 6/23/2006 8:50:12 AM - kyle (10.0.2.143)> 257 "/autocad/7115m/mec" is current directory.
+131	 6/23/2006 8:50:13 AM - kyle (10.0.2.143)> TYPE A
+132	 6/23/2006 8:50:13 AM - kyle (10.0.2.143)> 200 Type set to A
+133	 6/23/2006 8:50:13 AM - kyle (10.0.2.143)> PASV
+134	 6/23/2006 8:50:13 AM - kyle (10.0.2.143)> 227 Entering Passive Mode (10,0,81,10,5,217)
+135	 6/23/2006 8:50:13 AM - kyle (10.0.2.143)> LIST
+136	 6/23/2006 8:50:13 AM - kyle (10.0.2.143)> 150 Connection accepted
+137	 6/23/2006 8:50:13 AM - kyle (10.0.2.143)> 226 Transfer OK
+138	 6/23/2006 8:50:13 AM - kyle (10.0.2.143)> CWD WORKING
+139	 6/23/2006 8:50:13 AM - kyle (10.0.2.143)> 250 CWD successful. "/autocad/7115m/mec/WORKING" is current directory.
+140	 6/23/2006 8:50:13 AM - kyle (10.0.2.143)> PWD
+141	 6/23/2006 8:50:13 AM - kyle (10.0.2.143)> 257 "/autocad/7115m/mec/WORKING" is current directory.
+142	 6/23/2006 8:50:13 AM - kyle (10.0.2.143)> TYPE A
+143	 6/23/2006 8:50:13 AM - kyle (10.0.2.143)> 200 Type set to A
+144	 6/23/2006 8:50:14 AM - kyle (10.0.2.143)> PASV
+145	 6/23/2006 8:50:14 AM - kyle (10.0.2.143)> 227 Entering Passive Mode (10,0,81,10,5,218)
+146	 6/23/2006 8:50:14 AM - kyle (10.0.2.143)> LIST
+147	 6/23/2006 8:50:14 AM - kyle (10.0.2.143)> 150 Connection accepted
+148	 6/23/2006 8:50:14 AM - kyle (10.0.2.143)> 226 Transfer OK
+149	 6/23/2006 8:50:16 AM - kyle (10.0.2.143)> CWD /autocad/7115m/
+150	 6/23/2006 8:50:16 AM - kyle (10.0.2.143)> 250 CWD successful. "/autocad/7115m" is current directory.
+151	 6/23/2006 8:50:17 AM - kyle (10.0.2.143)> PWD
+152	 6/23/2006 8:50:17 AM - kyle (10.0.2.143)> 257 "/autocad/7115m" is current directory.
+153	 6/23/2006 8:50:18 AM - kyle (10.0.2.143)> CWD INS
+154	 6/23/2006 8:50:18 AM - kyle (10.0.2.143)> 250 CWD successful. "/autocad/7115m/INS" is current directory.
+155	 6/23/2006 8:50:19 AM - kyle (10.0.2.143)> PWD
+156	 6/23/2006 8:50:19 AM - kyle (10.0.2.143)> 257 "/autocad/7115m/INS" is current directory.
+157	 6/23/2006 8:50:20 AM - kyle (10.0.2.143)> TYPE A
+158	 6/23/2006 8:50:20 AM - kyle (10.0.2.143)> 200 Type set to A
+159	 6/23/2006 8:50:22 AM - kyle (10.0.2.143)> PASV
+160	 6/23/2006 8:50:22 AM - kyle (10.0.2.143)> 227 Entering Passive Mode (10,0,81,10,5,219)
+161	 6/23/2006 8:50:23 AM - kyle (10.0.2.143)> LIST
+162	 6/23/2006 8:50:23 AM - kyle (10.0.2.143)> 150 Connection accepted
+163	 6/23/2006 8:50:23 AM - kyle (10.0.2.143)> 226 Transfer OK
+164	 6/23/2006 8:50:23 AM - kyle (10.0.2.143)> CWD /autocad/7115m/
+165	 6/23/2006 8:50:23 AM - kyle (10.0.2.143)> 250 CWD successful. "/autocad/7115m" is current directory.
+166	 6/23/2006 8:50:24 AM - kyle (10.0.2.143)> PWD
+167	 6/23/2006 8:50:24 AM - kyle (10.0.2.143)> 257 "/autocad/7115m" is current directory.
+168	 6/23/2006 8:50:24 AM - kyle (10.0.2.143)> CWD ELE
+169	 6/23/2006 8:50:24 AM - kyle (10.0.2.143)> 250 CWD successful. "/autocad/7115m/ELE" is current directory.
+170	 6/23/2006 8:50:25 AM - kyle (10.0.2.143)> PWD
+171	 6/23/2006 8:50:25 AM - kyle (10.0.2.143)> 257 "/autocad/7115m/ELE" is current directory.
+172	 6/23/2006 8:50:25 AM - kyle (10.0.2.143)> TYPE A
+173	 6/23/2006 8:50:25 AM - kyle (10.0.2.143)> 200 Type set to A
+174	 6/23/2006 8:50:26 AM - kyle (10.0.2.143)> PASV
+175	 6/23/2006 8:50:26 AM - kyle (10.0.2.143)> 227 Entering Passive Mode (10,0,81,10,5,220)
+176	 6/23/2006 8:50:27 AM - kyle (10.0.2.143)> LIST
+177	 6/23/2006 8:50:27 AM - kyle (10.0.2.143)> 150 Connection accepted
+178	 6/23/2006 8:50:27 AM - kyle (10.0.2.143)> 226 Transfer OK
+179	 6/23/2006 8:50:28 AM - kyle (10.0.2.143)> CWD WORKING
+180	 6/23/2006 8:50:28 AM - kyle (10.0.2.143)> 250 CWD successful. "/autocad/7115m/ELE/WORKING" is current directory.
+181	 6/23/2006 8:50:28 AM - kyle (10.0.2.143)> PWD
+182	 6/23/2006 8:50:28 AM - kyle (10.0.2.143)> 257 "/autocad/7115m/ELE/WORKING" is current directory.
+183	 6/23/2006 8:50:28 AM - kyle (10.0.2.143)> TYPE A
+184	 6/23/2006 8:50:28 AM - kyle (10.0.2.143)> 200 Type set to A
+185	 6/23/2006 8:50:28 AM - kyle (10.0.2.143)> PASV
+186	 6/23/2006 8:50:28 AM - kyle (10.0.2.143)> 227 Entering Passive Mode (10,0,81,10,5,221)
+187	 6/23/2006 8:50:28 AM - kyle (10.0.2.143)> LIST
+188	 6/23/2006 8:50:28 AM - kyle (10.0.2.143)> 150 Connection accepted
+189	 6/23/2006 8:50:28 AM - kyle (10.0.2.143)> 226 Transfer OK
+190	 6/23/2006 8:50:29 AM - kyle (10.0.2.143)> CWD /autocad/7115m/
+191	 6/23/2006 8:50:29 AM - kyle (10.0.2.143)> 250 CWD successful. "/autocad/7115m" is current directory.
+192	 6/23/2006 8:50:30 AM - kyle (10.0.2.143)> PWD
+193	 6/23/2006 8:50:30 AM - kyle (10.0.2.143)> 257 "/autocad/7115m" is current directory.
+194	 6/23/2006 8:50:30 AM - kyle (10.0.2.143)> CWD CIV
+195	 6/23/2006 8:50:30 AM - kyle (10.0.2.143)> 250 CWD successful. "/autocad/7115m/CIV" is current directory.
+196	 6/23/2006 8:50:30 AM - kyle (10.0.2.143)> PWD
+197	 6/23/2006 8:50:30 AM - kyle (10.0.2.143)> 257 "/autocad/7115m/CIV" is current directory.
+198	 6/23/2006 8:50:31 AM - kyle (10.0.2.143)> TYPE A
+199	 6/23/2006 8:50:31 AM - kyle (10.0.2.143)> 200 Type set to A
+200	 6/23/2006 8:50:33 AM - kyle (10.0.2.143)> PASV
+201	 6/23/2006 8:50:33 AM - kyle (10.0.2.143)> 227 Entering Passive Mode (10,0,81,10,5,222)
+202	 6/23/2006 8:50:33 AM - kyle (10.0.2.143)> LIST
+203	 6/23/2006 8:50:33 AM - kyle (10.0.2.143)> 150 Connection accepted
+204	 6/23/2006 8:50:33 AM - kyle (10.0.2.143)> 226 Transfer OK
+205	 6/23/2006 8:50:35 AM - kyle (10.0.2.143)> CWD /autocad/7115m/
+206	 6/23/2006 8:50:35 AM - kyle (10.0.2.143)> 250 CWD successful. "/autocad/7115m" is current directory.
+207	 6/23/2006 8:50:35 AM - kyle (10.0.2.143)> PWD
+208	 6/23/2006 8:50:35 AM - kyle (10.0.2.143)> 257 "/autocad/7115m" is current directory.
+209	 6/23/2006 8:50:35 AM - kyle (10.0.2.143)> CWD Arc
+210	 6/23/2006 8:50:35 AM - kyle (10.0.2.143)> 250 CWD successful. "/autocad/7115m/Arc" is current directory.
+211	 6/23/2006 8:50:36 AM - kyle (10.0.2.143)> PWD
+212	 6/23/2006 8:50:36 AM - kyle (10.0.2.143)> 257 "/autocad/7115m/Arc" is current directory.
+213	 6/23/2006 8:50:36 AM - kyle (10.0.2.143)> TYPE A
+214	 6/23/2006 8:50:36 AM - kyle (10.0.2.143)> 200 Type set to A
+215	 6/23/2006 8:50:36 AM - kyle (10.0.2.143)> PASV
+216	 6/23/2006 8:50:36 AM - kyle (10.0.2.143)> 227 Entering Passive Mode (10,0,81,10,5,223)
+217	 6/23/2006 8:50:36 AM - kyle (10.0.2.143)> LIST
+218	 6/23/2006 8:50:36 AM - kyle (10.0.2.143)> 150 Connection accepted
+219	 6/23/2006 8:50:36 AM - kyle (10.0.2.143)> 226 Transfer OK
+220	 6/23/2006 8:50:36 AM - kyle (10.0.2.143)> CWD /autocad/
+221	 6/23/2006 8:50:36 AM - kyle (10.0.2.143)> 250 CWD successful. "/autocad" is current directory.
+222	 6/23/2006 8:50:36 AM - kyle (10.0.2.143)> PWD
+223	 6/23/2006 8:50:36 AM - kyle (10.0.2.143)> 257 "/autocad" is current directory.
+224	 6/23/2006 8:50:37 AM - kyle (10.0.2.143)> CWD 7062C
+225	 6/23/2006 8:50:37 AM - kyle (10.0.2.143)> 250 CWD successful. "/autocad/7062C" is current directory.
+226	 6/23/2006 8:50:37 AM - kyle (10.0.2.143)> PWD
+227	 6/23/2006 8:50:37 AM - kyle (10.0.2.143)> 257 "/autocad/7062C" is current directory.
+228	 6/23/2006 8:50:38 AM - kyle (10.0.2.143)> TYPE A
+229	 6/23/2006 8:50:38 AM - kyle (10.0.2.143)> 200 Type set to A
+230	 6/23/2006 8:50:39 AM - kyle (10.0.2.143)> PASV
+231	 6/23/2006 8:50:39 AM - kyle (10.0.2.143)> 227 Entering Passive Mode (10,0,81,10,5,224)
+232	 6/23/2006 8:50:40 AM - kyle (10.0.2.143)> LIST
+233	 6/23/2006 8:50:40 AM - kyle (10.0.2.143)> 150 Connection accepted
+234	 6/23/2006 8:50:40 AM - kyle (10.0.2.143)> 226 Transfer OK
+235	 6/23/2006 8:50:41 AM - kyle (10.0.2.143)> CWD WORKING
+236	 6/23/2006 8:50:41 AM - kyle (10.0.2.143)> 250 CWD successful. "/autocad/7062C/WORKING" is current directory.
+237	 6/23/2006 8:50:41 AM - kyle (10.0.2.143)> PWD
+238	 6/23/2006 8:50:41 AM - kyle (10.0.2.143)> 257 "/autocad/7062C/WORKING" is current directory.
+239	 6/23/2006 8:50:43 AM - kyle (10.0.2.143)> TYPE A
+240	 6/23/2006 8:50:43 AM - kyle (10.0.2.143)> 200 Type set to A
+241	 6/23/2006 8:50:44 AM - kyle (10.0.2.143)> PASV
+242	 6/23/2006 8:50:44 AM - kyle (10.0.2.143)> 227 Entering Passive Mode (10,0,81,10,5,225)
+243	 6/23/2006 8:50:45 AM - kyle (10.0.2.143)> LIST
+244	 6/23/2006 8:50:45 AM - kyle (10.0.2.143)> 150 Connection accepted
+245	 6/23/2006 8:50:45 AM - kyle (10.0.2.143)> 226 Transfer OK
+246	 6/23/2006 8:50:46 AM - kyle (10.0.2.143)> CWD /autocad/7062C/
+247	 6/23/2006 8:50:46 AM - kyle (10.0.2.143)> 250 CWD successful. "/autocad/7062C" is current directory.
+248	 6/23/2006 8:50:46 AM - kyle (10.0.2.143)> PWD
+249	 6/23/2006 8:50:46 AM - kyle (10.0.2.143)> 257 "/autocad/7062C" is current directory.
+250	 6/23/2006 8:50:47 AM - kyle (10.0.2.143)> CWD PRO
+251	 6/23/2006 8:50:47 AM - kyle (10.0.2.143)> 250 CWD successful. "/autocad/7062C/PRO" is current directory.
+252	 6/23/2006 8:50:49 AM - kyle (10.0.2.143)> PWD
+253	 6/23/2006 8:50:49 AM - kyle (10.0.2.143)> 257 "/autocad/7062C/PRO" is current directory.
+254	 6/23/2006 8:50:50 AM - kyle (10.0.2.143)> TYPE A
+255	 6/23/2006 8:50:50 AM - kyle (10.0.2.143)> 200 Type set to A
+256	 6/23/2006 8:50:51 AM - kyle (10.0.2.143)> PASV
+257	 6/23/2006 8:50:51 AM - kyle (10.0.2.143)> 227 Entering Passive Mode (10,0,81,10,5,226)
+258	 6/23/2006 8:50:52 AM - kyle (10.0.2.143)> LIST
+259	 6/23/2006 8:50:52 AM - kyle (10.0.2.143)> 150 Connection accepted
+260	 6/23/2006 8:50:52 AM - kyle (10.0.2.143)> 226 Transfer OK
+261	 6/23/2006 8:50:53 AM - kyle (10.0.2.143)> CWD /autocad/7062C/
+262	 6/23/2006 8:50:53 AM - kyle (10.0.2.143)> 250 CWD successful. "/autocad/7062C" is current directory.
+263	 6/23/2006 8:50:54 AM - kyle (10.0.2.143)> PWD
+264	 6/23/2006 8:50:54 AM - kyle (10.0.2.143)> 257 "/autocad/7062C" is current directory.
+265	 6/23/2006 8:50:55 AM - kyle (10.0.2.143)> CWD PDR
+266	 6/23/2006 8:50:55 AM - kyle (10.0.2.143)> 250 CWD successful. "/autocad/7062C/PDR" is current directory.
+267	 6/23/2006 8:50:58 AM - kyle (10.0.2.143)> PWD
+268	 6/23/2006 8:50:58 AM - kyle (10.0.2.143)> 257 "/autocad/7062C/PDR" is current directory.
+269	 6/23/2006 8:50:58 AM - kyle (10.0.2.143)> TYPE A
+270	 6/23/2006 8:50:58 AM - kyle (10.0.2.143)> 200 Type set to A
+271	 6/23/2006 8:51:00 AM - kyle (10.0.2.143)> PASV
+272	 6/23/2006 8:51:00 AM - kyle (10.0.2.143)> 227 Entering Passive Mode (10,0,81,10,5,227)
+273	 6/23/2006 8:51:01 AM - kyle (10.0.2.143)> LIST
+274	 6/23/2006 8:51:01 AM - kyle (10.0.2.143)> 150 Connection accepted
+275	 6/23/2006 8:51:01 AM - kyle (10.0.2.143)> 226 Transfer OK
+276	 6/23/2006 8:51:02 AM - kyle (10.0.2.143)> CWD /autocad/7062C/
+277	 6/23/2006 8:51:02 AM - kyle (10.0.2.143)> 250 CWD successful. "/autocad/7062C" is current directory.
+278	 6/23/2006 8:51:03 AM - kyle (10.0.2.143)> PWD
+279	 6/23/2006 8:51:03 AM - kyle (10.0.2.143)> 257 "/autocad/7062C" is current directory.
+280	 6/23/2006 8:51:04 AM - kyle (10.0.2.143)> CWD ELE
+281	 6/23/2006 8:51:04 AM - kyle (10.0.2.143)> 250 CWD successful. "/autocad/7062C/ELE" is current directory.
+282	 6/23/2006 8:51:05 AM - kyle (10.0.2.143)> PWD
+283	 6/23/2006 8:51:05 AM - kyle (10.0.2.143)> 257 "/autocad/7062C/ELE" is current directory.
+284	 6/23/2006 8:51:06 AM - kyle (10.0.2.143)> TYPE A
+285	 6/23/2006 8:51:06 AM - kyle (10.0.2.143)> 200 Type set to A
+286	 6/23/2006 8:51:07 AM - kyle (10.0.2.143)> PASV
+287	 6/23/2006 8:51:07 AM - kyle (10.0.2.143)> 227 Entering Passive Mode (10,0,81,10,5,228)
+288	 6/23/2006 8:51:08 AM - kyle (10.0.2.143)> LIST
+289	 6/23/2006 8:51:08 AM - kyle (10.0.2.143)> 150 Connection accepted
+290	 6/23/2006 8:51:08 AM - kyle (10.0.2.143)> 226 Transfer OK
+291	 6/23/2006 8:51:09 AM - kyle (10.0.2.143)> CWD working
+292	 6/23/2006 8:51:09 AM - kyle (10.0.2.143)> 250 CWD successful. "/autocad/7062C/ELE/working" is current directory.
+293	 6/23/2006 8:51:09 AM - kyle (10.0.2.143)> PWD
+294	 6/23/2006 8:51:09 AM - kyle (10.0.2.143)> 257 "/autocad/7062C/ELE/working" is current directory.
+295	 6/23/2006 8:51:09 AM - kyle (10.0.2.143)> TYPE A
+296	 6/23/2006 8:51:09 AM - kyle (10.0.2.143)> 200 Type set to A
+297	 6/23/2006 8:51:10 AM - kyle (10.0.2.143)> PASV
+298	 6/23/2006 8:51:10 AM - kyle (10.0.2.143)> 227 Entering Passive Mode (10,0,81,10,5,229)
+299	 6/23/2006 8:51:11 AM - kyle (10.0.2.143)> LIST
+300	 6/23/2006 8:51:11 AM - kyle (10.0.2.143)> 150 Connection accepted
+301	 6/23/2006 8:51:11 AM - kyle (10.0.2.143)> 226 Transfer OK
+302	 6/23/2006 8:51:11 AM - kyle (10.0.2.143)> CWD Aquapoint dwgs
+303	 6/23/2006 8:51:11 AM - kyle (10.0.2.143)> 250 CWD successful. "/autocad/7062C/ELE/working/Aquapoint dwgs" is current directory.
+304	 6/23/2006 8:51:11 AM - kyle (10.0.2.143)> PWD
+305	 6/23/2006 8:51:11 AM - kyle (10.0.2.143)> 257 "/autocad/7062C/ELE/working/Aquapoint dwgs" is current directory.
+306	 6/23/2006 8:51:12 AM - kyle (10.0.2.143)> TYPE A
+307	 6/23/2006 8:51:12 AM - kyle (10.0.2.143)> 200 Type set to A
+308	 6/23/2006 8:51:12 AM - kyle (10.0.2.143)> PASV
+309	 6/23/2006 8:51:12 AM - kyle (10.0.2.143)> 227 Entering Passive Mode (10,0,81,10,5,230)
+310	 6/23/2006 8:51:13 AM - kyle (10.0.2.143)> 421 No-transfer-time exceeded. Closing control connection.
+311	 6/23/2006 8:51:13 AM - kyle (10.0.2.143)> disconnected.
+312	 7/23/2006 8:51:15 AM - (not logged in) (10.0.2.143)> Connected, sending welcome message...
+313	 7/23/2006 8:51:15 AM - (not logged in) (10.0.2.143)> 220-FileZilla Server version 0.9.18 beta
+314	 7/23/2006 8:51:15 AM - (not logged in) (10.0.2.143)> 220-written by Tim Kosse (Tim.Kosse@gmx.de)
+315	 7/23/2006 8:51:15 AM - (not logged in) (10.0.2.143)> 220 Please visit http://sourceforge.net/projects/filezilla/
+316	 7/23/2006 8:51:16 AM - (not logged in) (10.0.2.143)> USER kyle
+317	 7/23/2006 8:51:16 AM - (not logged in) (10.0.2.143)> 331 Password required for kyle
+318	 7/23/2006 8:51:17 AM - (not logged in) (10.0.2.143)> PASS *******
+319	 7/23/2006 8:51:17 AM - kyle (10.0.2.143)> 230 Logged on
+320	 7/23/2006 8:51:18 AM - kyle (10.0.2.143)> SYST
+321	 7/23/2006 8:51:18 AM - kyle (10.0.2.143)> 215 UNIX emulated by FileZilla
+322	 7/23/2006 8:51:19 AM - kyle (10.0.2.143)> FEAT
+323	 7/23/2006 8:51:19 AM - kyle (10.0.2.143)> 211-Features:
+324	 7/23/2006 8:51:19 AM - kyle (10.0.2.143)>  MDTM
+325	 7/23/2006 8:51:19 AM - kyle (10.0.2.143)>  REST STREAM
+326	 7/23/2006 8:51:19 AM - kyle (10.0.2.143)>  SIZE
+327	 7/23/2006 8:51:19 AM - kyle (10.0.2.143)>  MLST type*;size*;modify*;
+328	 7/23/2006 8:51:19 AM - kyle (10.0.2.143)>  UTF8
+329	 7/23/2006 8:51:19 AM - kyle (10.0.2.143)>  CLNT
+330	 7/23/2006 8:51:19 AM - kyle (10.0.2.143)> 211 End
+331	 7/23/2006 8:51:44 AM - kyle (10.0.2.143)> REST 0
+332	 7/23/2006 8:51:44 AM - kyle (10.0.2.143)> 350 Rest supported. Restarting at 0
+333	 7/23/2006 8:52:07 AM - kyle (10.0.2.143)> REST 0
+334	 7/23/2006 8:52:07 AM - kyle (10.0.2.143)> 350 Rest supported. Restarting at 0
+335	 7/23/2006 8:52:31 AM - kyle (10.0.2.143)> TYPE A
+336	 7/23/2006 8:52:31 AM - kyle (10.0.2.143)> 200 Type set to A
+337	 7/23/2006 8:52:56 AM - kyle (10.0.2.143)> PWD
+338	 7/23/2006 8:52:56 AM - kyle (10.0.2.143)> 257 "/" is current directory.
+339	 7/23/2006 8:53:18 AM - kyle (10.0.2.143)> 421 No-transfer-time exceeded. Closing control connection.
+340	 7/23/2006 8:53:18 AM - kyle (10.0.2.143)> disconnected.
+341	 8/23/2006 8:53:19 AM - (not logged in) (10.0.2.143)> Connected, sending welcome message...
+342	 8/23/2006 8:53:19 AM - (not logged in) (10.0.2.143)> 220-FileZilla Server version 0.9.18 beta
+343	 8/23/2006 8:53:19 AM - (not logged in) (10.0.2.143)> 220-written by Tim Kosse (Tim.Kosse@gmx.de)
+344	 8/23/2006 8:53:19 AM - (not logged in) (10.0.2.143)> 220 Please visit http://sourceforge.net/projects/filezilla/
+345	 8/23/2006 8:53:20 AM - (not logged in) (10.0.2.143)> USER kyle
+346	 8/23/2006 8:53:20 AM - (not logged in) (10.0.2.143)> 331 Password required for kyle
+347	 8/23/2006 8:53:20 AM - (not logged in) (10.0.2.143)> PASS *******
+348	 8/23/2006 8:53:20 AM - kyle (10.0.2.143)> 230 Logged on
+349	 8/23/2006 8:53:21 AM - kyle (10.0.2.143)> SYST
+350	 8/23/2006 8:53:21 AM - kyle (10.0.2.143)> 215 UNIX emulated by FileZilla
+351	 8/23/2006 8:53:21 AM - kyle (10.0.2.143)> FEAT
+352	 8/23/2006 8:53:21 AM - kyle (10.0.2.143)> 211-Features:
+353	 8/23/2006 8:53:21 AM - kyle (10.0.2.143)>  MDTM
+354	 8/23/2006 8:53:21 AM - kyle (10.0.2.143)>  REST STREAM
+355	 8/23/2006 8:53:21 AM - kyle (10.0.2.143)>  SIZE
+356	 8/23/2006 8:53:21 AM - kyle (10.0.2.143)>  MLST type*;size*;modify*;
+357	 8/23/2006 8:53:21 AM - kyle (10.0.2.143)>  UTF8
+358	 8/23/2006 8:53:21 AM - kyle (10.0.2.143)>  CLNT
+359	 8/23/2006 8:53:21 AM - kyle (10.0.2.143)> 211 End
+360	 8/23/2006 8:53:45 AM - kyle (10.0.2.143)> REST 0
+361	 8/23/2006 8:53:45 AM - kyle (10.0.2.143)> 350 Rest supported. Restarting at 0
+362	 8/23/2006 8:54:09 AM - kyle (10.0.2.143)> PWD
+363	 8/23/2006 8:54:09 AM - kyle (10.0.2.143)> 257 "/" is current directory.
+364	 8/23/2006 8:54:34 AM - kyle (10.0.2.143)> PWD
+365	 8/23/2006 8:54:34 AM - kyle (10.0.2.143)> 257 "/" is current directory.
+366	 8/23/2006 8:54:58 AM - kyle (10.0.2.143)> TYPE A
+367	 8/23/2006 8:54:58 AM - kyle (10.0.2.143)> 200 Type set to A
+368	 8/23/2006 8:55:21 AM - kyle (10.0.2.143)> 421 No-transfer-time exceeded. Closing control connection.
+369	 8/23/2006 8:55:21 AM - kyle (10.0.2.143)> disconnected.
+370	 9/23/2006 8:55:22 AM - (not logged in) (10.0.2.143)> Connected, sending welcome message...
+371	 9/23/2006 8:55:22 AM - (not logged in) (10.0.2.143)> 220-FileZilla Server version 0.9.18 beta
+372	 9/23/2006 8:55:22 AM - (not logged in) (10.0.2.143)> 220-written by Tim Kosse (Tim.Kosse@gmx.de)
+373	 9/23/2006 8:55:22 AM - (not logged in) (10.0.2.143)> 220 Please visit http://sourceforge.net/projects/filezilla/
+374	 9/23/2006 8:55:24 AM - (not logged in) (10.0.2.143)> USER kyle
+375	 9/23/2006 8:55:24 AM - (not logged in) (10.0.2.143)> 331 Password required for kyle
+376	 9/23/2006 8:55:24 AM - (not logged in) (10.0.2.143)> PASS *******
+377	 9/23/2006 8:55:24 AM - kyle (10.0.2.143)> 230 Logged on
+378	 9/23/2006 8:55:25 AM - kyle (10.0.2.143)> SYST
+379	 9/23/2006 8:55:25 AM - kyle (10.0.2.143)> 215 UNIX emulated by FileZilla
+380	 9/23/2006 8:55:26 AM - kyle (10.0.2.143)> FEAT
+381	 9/23/2006 8:55:26 AM - kyle (10.0.2.143)> 211-Features:
+382	 9/23/2006 8:55:26 AM - kyle (10.0.2.143)>  MDTM
+383	 9/23/2006 8:55:26 AM - kyle (10.0.2.143)>  REST STREAM
+384	 9/23/2006 8:55:26 AM - kyle (10.0.2.143)>  SIZE
+385	 9/23/2006 8:55:26 AM - kyle (10.0.2.143)>  MLST type*;size*;modify*;
+386	 9/23/2006 8:55:26 AM - kyle (10.0.2.143)>  UTF8
+387	 9/23/2006 8:55:26 AM - kyle (10.0.2.143)>  CLNT
+388	 9/23/2006 8:55:26 AM - kyle (10.0.2.143)> 211 End
+389	 9/23/2006 8:55:50 AM - kyle (10.0.2.143)> TYPE A
+390	 9/23/2006 8:55:50 AM - kyle (10.0.2.143)> 200 Type set to A
+391	 9/23/2006 8:56:13 AM - kyle (10.0.2.143)> TYPE I
+392	 9/23/2006 8:56:13 AM - kyle (10.0.2.143)> 200 Type set to I
+393	 9/23/2006 8:56:37 AM - kyle (10.0.2.143)> TYPE I
+394	 9/23/2006 8:56:37 AM - kyle (10.0.2.143)> 200 Type set to I
+395	 9/23/2006 8:57:02 AM - kyle (10.0.2.143)> TYPE I
+396	 9/23/2006 8:57:02 AM - kyle (10.0.2.143)> 200 Type set to I
+397	 9/23/2006 8:57:25 AM - kyle (10.0.2.143)> 421 No-transfer-time exceeded. Closing control connection.
+398	 9/23/2006 8:57:25 AM - kyle (10.0.2.143)> disconnected.
+399	 10/23/2006 8:57:27 AM - (not logged in) (10.0.2.143)> Connected, sending welcome message...
+400	 10/23/2006 8:57:27 AM - (not logged in) (10.0.2.143)> 220-FileZilla Server version 0.9.18 beta
+401	 10/23/2006 8:57:27 AM - (not logged in) (10.0.2.143)> 220-written by Tim Kosse (Tim.Kosse@gmx.de)
+402	 10/23/2006 8:57:27 AM - (not logged in) (10.0.2.143)> 220 Please visit http://sourceforge.net/projects/filezilla/
+403	 10/23/2006 8:57:29 AM - (not logged in) (10.0.2.143)> USER kyle
+404	 10/23/2006 8:57:29 AM - (not logged in) (10.0.2.143)> 331 Password required for kyle
+405	 10/23/2006 8:57:32 AM - (not logged in) (10.0.2.143)> PASS *******
+406	 10/23/2006 8:57:32 AM - kyle (10.0.2.143)> 230 Logged on
+407	 10/23/2006 8:57:33 AM - kyle (10.0.2.143)> SYST
+408	 10/23/2006 8:57:33 AM - kyle (10.0.2.143)> 215 UNIX emulated by FileZilla
+409	 10/23/2006 8:57:34 AM - kyle (10.0.2.143)> FEAT
+410	 10/23/2006 8:57:34 AM - kyle (10.0.2.143)> 211-Features:
+411	 10/23/2006 8:57:34 AM - kyle (10.0.2.143)>  MDTM
+412	 10/23/2006 8:57:34 AM - kyle (10.0.2.143)>  REST STREAM
+413	 10/23/2006 8:57:34 AM - kyle (10.0.2.143)>  SIZE
+414	 10/23/2006 8:57:34 AM - kyle (10.0.2.143)>  MLST type*;size*;modify*;
+415	 10/23/2006 8:57:34 AM - kyle (10.0.2.143)>  UTF8
+416	 10/23/2006 8:57:34 AM - kyle (10.0.2.143)>  CLNT
+417	 10/23/2006 8:57:34 AM - kyle (10.0.2.143)> 211 End
+418	 10/23/2006 8:57:59 AM - kyle (10.0.2.143)> TYPE A
+419	 10/23/2006 8:57:59 AM - kyle (10.0.2.143)> 200 Type set to A
+420	 10/23/2006 8:58:21 AM - kyle (10.0.2.143)> TYPE A
+421	 10/23/2006 8:58:21 AM - kyle (10.0.2.143)> 200 Type set to A
+422	 10/23/2006 8:58:45 AM - kyle (10.0.2.143)> PWD
+423	 10/23/2006 8:58:45 AM - kyle (10.0.2.143)> 257 "/" is current directory.
+424	 10/23/2006 8:59:10 AM - kyle (10.0.2.143)> PWD
+425	 10/23/2006 8:59:10 AM - kyle (10.0.2.143)> 257 "/" is current directory.
+426	 10/23/2006 8:59:32 AM - kyle (10.0.2.143)> 421 No-transfer-time exceeded. Closing control connection.
+427	 10/23/2006 8:59:32 AM - kyle (10.0.2.143)> disconnected.
